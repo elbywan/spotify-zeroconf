@@ -58,8 +58,6 @@ async function spotifyZeroconf ({
             credentials = await spotifyDiscover({ name: deviceName })
         }
 
-        // console.log(credentials)
-
         await session.authenticate(credentials)
 
         session.startHandlerLoop()
