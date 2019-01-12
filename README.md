@@ -1,6 +1,10 @@
 # spotify-zeroconf
 ### Spotify Web API authentication, the easy way.
 
+[![npm version](https://badge.fury.io/js/spotify-zeroconf.svg)](https://www.npmjs.com/package/spotify-zeroconf)
+
+-----
+
 ## About this library
 
 `spotify-zeroconf` is a partial rewrite of [`librespot`](https://github.com/librespot-org/librespot) that has one goal:
@@ -10,6 +14,13 @@
 ## How does it work
 
 Basically, this library takes advantage of the [`Spotify Connect`](https://www.spotify.com/connect/) protocol and brodcasts itself as a Spotify compatible device on your network. Once you click on the device using any Spotify client (desktop, mobile…), it will perform multiple handshakes and authentication rounds with the Spotify access points, and provide you with a token that you will be able to use with the [`Spotify Web API`](https://developer.spotify.com/documentation/web-api/).
+
+<br/>
+<img src ="screenshot.png" width="200" />
+
+*Click me!*
+
+<br/>
 
 There are more details in the `librespot` wiki (especially the [Authentication](https://github.com/librespot-org/librespot/wiki/Authentication) and [Connection](https://github.com/librespot-org/librespot/wiki/Connection) parts).
 
