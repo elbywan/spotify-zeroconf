@@ -29,7 +29,8 @@ async function spotifyZeroconf ({
     clientId,
     scope = DEFAULTS.scope,
     deviceName = DEFAULTS.deviceName,
-    noCache = false
+    noCache = false,
+    authType = 'token'
 } = {}) {
     try {
         let address = 'ap.spotify.com'
@@ -64,7 +65,7 @@ async function spotifyZeroconf ({
 
         return new Promise((resolve, reject) => {
             session.sendMercuryRequest({
-                uri: encodeURI(`hm://keymaster/token/authenticated?client_id=${clientId}&scope=${scope}`),
+                uri: encodeURI(`hm://keymaster/${authType}/authenticated?client_id=${clientId}&scope=${scope}`),
                 method: 'GET'
             }, ({ header, payloads }) => {
                 if(header.statusCode < 300 && header.statusCode >= 200) {

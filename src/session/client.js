@@ -26,7 +26,7 @@ module.exports = class Client {
                     resolve(dataRead)
                     this.readers.shift()
                 } else {
-                    break;
+                    break
                 }
             }
         })

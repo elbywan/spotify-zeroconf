@@ -41,6 +41,7 @@ const credentials = await spotifyZeroconf({
     scope: // Scopes with a comma separator. Defaults to a list containing every scope. (see here: https://developer.spotify.com/documentation/general/guides/scopes/)
     deviceName: // Name of the device that appears on the network. Defaults to 'Spotify Zeroconf'.
     noCache: // If true, will not store the first handshake credentials and will force the device to appear on the network every time the function is called. Defaults to false.
+    authType: // 'token' (default) or 'code'. Code will give you an access code that you can exchange for a token and a refresh_token, but you will need the client_secret. (see here: https://developer.spotify.com/documentation/general/guides/authorization-guide/#2-have-your-application-request-refresh-and-access-tokens-spotify-returns-access-and-refresh-tokens)
 })
 
 // Web API token.
