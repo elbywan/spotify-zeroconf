@@ -1,6 +1,6 @@
 {
   "name": "spotify-zeroconf",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Spotify Web API authentication, the easy way.",
   "main": "src/index.js",
   "scripts": {},
@@ -8,6 +8,7 @@
   "license": "MIT",
   "dependencies": {
     "debug": "^4.1.1",
+    "express": "^4.16.4",
     "long": "^4.0.0",
     "node-fetch": "^2.3.0",
     "protobufjs": "^6.8.8",

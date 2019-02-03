@@ -38,7 +38,6 @@ function getBlobFromAuth (auth, diffieHellman) {
 }
 
 function getCredentialsFromBlob (base64Blob, userName, deviceId) {
-
     // data = b64_decode(blob)
     const data = Buffer.from(base64Blob, 'base64')
     // base_key = PBKDF2(SHA1(deviceID), username, 0x100, 1)
