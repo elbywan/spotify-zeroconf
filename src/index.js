@@ -57,6 +57,9 @@ async function spotifyZeroconf ({
             credentials = JSON.parse(fs.readFileSync('credentials.json', 'utf-8'))
         } else {
             credentials = await spotifyDiscover({ name: deviceName })
+            if(!noCache) {
+                fs.writeFileSync('credentials.json', JSON.stringify(credentials))
+            }
         }
 
         await session.authenticate(credentials)
