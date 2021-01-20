@@ -18,7 +18,7 @@ Basically, this library takes advantage of the [`Spotify Connect`](https://www.s
 <br/>
 <img src ="screenshot.png" width="200" />
 
-*Click me!*
+*Click to get the credentials!*
 
 <br/>
 
