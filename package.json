@@ -12,7 +12,7 @@
     "express": "^4.16.4",
     "long": "^4.0.0",
     "mdns": "^2.4.0",
-    "node-fetch": "^2.3.0",
+    "node-fetch": "^3.1.1",
     "protobufjs": "^6.8.8",
     "shannon-bindings": "^0.1.0",
     "wretch": "^1.4.2"
