@@ -18,6 +18,6 @@
     "wretch": "^1.4.2"
   },
   "devDependencies": {
-    "eslint": "^5.12.0"
+    "eslint": "^9.39.1"
   }
 }
